@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for post in object_list %}
+        <div style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;">
+            <h2 style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;"><a href="{% url 'page' post.pk %}">{{ post.Firstname }}</a></h2>
+            <p style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;">{{ post.Email }}</p>
+        </div>
+    {% endfor %}
+
+{% endblock content %}
+
+
+<!-- 
+    I did lots of the same styles because if I didn't so it would be not work!
+ -->

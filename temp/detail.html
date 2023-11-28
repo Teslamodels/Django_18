@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;">
+        <h1 style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;">{{ post.Firstname }} {{ post.Lastname }}</h1>
+        <h2 style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;">{{ post.Middlename }}</h2>
+        <h3 style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;">{{ post.Username }}</h3>
+        <h4 style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;">{{ post.Email }}</h4>
+        <h5 style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;">{{ post.Password }}</h5>
+    </div>
+
+{% endblock content %}
+
+
+<!-- 
+    I did lots of the same styles because if I didn't so it would be not work!
+ -->
