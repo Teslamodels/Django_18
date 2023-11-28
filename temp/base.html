@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Base</title>
+</head>
+<body>
+    <div style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;">
+        <header style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;">
+            <h1 style="text-align: center;  font-family: sans-serif; background-color: blue; color: white; border-radius: 10px;"><a href="{% url 'home' %}">facebook</a></h1>
+        </header>
+    </div>
+
+    <div>
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>
+
+<!-- 
+    I did lots of the same styles because if I didn't so it would be not work!
+ -->
